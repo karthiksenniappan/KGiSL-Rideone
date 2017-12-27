@@ -1,29 +1,24 @@
 # KGiSL-Rideone
 
 
-Module 1(Karthik & Gokul)
-  Organization Module
-    Master
-    Booking Management
-    Follow-ups
-    Vehicle Management
-    Payment Management
-    Attendance Management
-    Reports
-    Settings
+Module 1(Karthik )
+  Administrator Module
+   Driver
+   Taxi 
+   Owner
     
-    
-Module 2(Kavyamalar)
-  Customer Module
+Module 2&3(Kavyamalar)
+  Customer/Employee Module
     Register /Login
     Booking
-    Live Tracking
-    Payment
 
 
-Module 3(Monisha)
-  Driver Module
-    Trip Accept/Reject
-    Booking History.
-    Distance calculation
-    Waiting  time.
+Module 4(Gokul)
+  Driver & Customer App
+    Tracking
+
+Module 5 & 6(Monisha)
+  Report and CC Collection Module
+    Payment 
+    Dashboard
+    Auto Email & SMS
