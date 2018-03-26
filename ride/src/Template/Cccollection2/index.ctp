@@ -1,0 +1,49 @@
+<?php
+/**
+ * @var \App\View\AppView $this
+ * @var \App\Model\Entity\Cccollection2[]|\Cake\Collection\CollectionInterface $cccollection2
+ */
+?>
+<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('New Cccollection2'), ['action' => 'add']) ?></li>
+    </ul>
+</nav>
+<div class="cccollection2 index large-9 medium-8 columns content">
+    <h3><?= __('Cccollection2') ?></h3>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('email') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('total_amount') ?></th>
+                <th scope="col" class="actions"><?= __('Actions') ?></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($cccollection2 as $cccollection2): ?>
+            <tr>
+                <td><?= $this->Number->format($cccollection2->id) ?></td>
+                <td><?= h($cccollection2->email) ?></td>
+                <td><?= h($cccollection2->total_amount) ?></td>
+                <td class="actions">
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $cccollection2->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $cccollection2->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $cccollection2->id], ['confirm' => __('Are you sure you want to delete # {0}?', $cccollection2->id)]) ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <div class="paginator">
+        <ul class="pagination">
+            <?= $this->Paginator->first('<< ' . __('first')) ?>
+            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->last(__('last') . ' >>') ?>
+        </ul>
+        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+    </div>
+</div>
